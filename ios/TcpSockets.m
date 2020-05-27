@@ -29,6 +29,11 @@
     int _counter;
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 RCT_EXPORT_MODULE()
 
 - (id)init {
